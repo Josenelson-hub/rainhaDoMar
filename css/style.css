@@ -102,11 +102,12 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .mapa-grid {
+  .conteiner-mapa {
+    display: grid;
     grid-template-columns: 1fr;
   }
-  .vantagens {
-    margin-top: 200px;
+  .vantagens-titulo {
+    margin-top: 400px;
   }
 }
 .imagem-apresentacao-conteiner {
@@ -115,9 +116,6 @@
 
 @media (max-width: 550px) {
   .imagem-apresentacao-conteiner {
-    height: 300px;
-  }
-  .mapa {
     height: 300px;
   }
 }
@@ -159,16 +157,6 @@
   text-align: center;
 }
 
-@media (max-width: 880px) {
-  .vantagens {
-    margin-top: 400px;
-  }
-}
-@media (max-width: 550px) {
-  .vantagens {
-    margin-top: 250px;
-  }
-}
 .flex-item {
   max-width: 350px;
   color: #0d6efd;
@@ -211,6 +199,7 @@
   grid-template-rows: auto;
   text-align: center;
   padding: 10px;
+  border: 5px solid #0d6efd;
 }
 
 .botao-modal {
@@ -269,9 +258,9 @@
   right: -20px;
 }
 
-.mapa-grid {
+.conteiner-mapa {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 1.8fr 1.2fr;
   gap: 10px;
 }
 

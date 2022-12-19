@@ -105,17 +105,17 @@ padding: 5px;
 }
 
 @media (max-width:900px){
+
     .conteiner-apresentacao{
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    .mapa-grid{
-       grid-template-columns: 1fr;
+    .conteiner-mapa{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-
-    .vantagens{
-        margin-top: 200px;
+    .vantagens-titulo{
+        margin-top: 400px;
     }
 
 }
@@ -128,9 +128,7 @@ padding: 5px;
     .imagem-apresentacao-conteiner{
         height: 300px;
     }
-    .mapa{
-        height: 300px;
-    }
+
 }
 
 .imagem-apresentacao{
@@ -170,18 +168,6 @@ padding: 5px;
 .vantagens-titulo{
     color: $cor-principal;
     text-align: center;
-}
-
-@media (max-width:880px){
-    .vantagens{
-        margin-top: 400px;
-}
-}
-    @media (max-width:550px){
-        .vantagens{
-            margin-top: 250px;
-        }
-
 }
 
 .flex-item{
@@ -228,6 +214,7 @@ padding: 5px;
     grid-template-rows: auto;
    text-align: center;
    padding: 10px;
+   border: 5px solid $cor-principal;
 }
 
 .botao-modal{
@@ -286,9 +273,9 @@ padding: 5px;
     right: -20px;
 }
 
-.mapa-grid{
+.conteiner-mapa{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1.8fr 1.2fr;
     gap: 10px;
 }
 
