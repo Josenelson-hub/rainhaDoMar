@@ -32,6 +32,11 @@
   border-bottom: 2px solid #0d6efd;
 }
 
+.titulo:hover {
+  border-bottom: 2px solid rgb(50, 196, 50);
+  transition: 0.2s;
+}
+
 .lista {
   margin-top: 35px;
   display: flex;
@@ -52,7 +57,7 @@
   padding: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 993px) {
   .lista {
     display: none;
   }
@@ -61,7 +66,7 @@
   }
 }
 .lista li {
-  padding-right: 15px;
+  padding-right: 10px;
   list-style-type: none;
   text-decoration: none;
 }
@@ -71,6 +76,17 @@
   text-decoration: none;
   color: #0d6efd;
   font-size: 20px;
+  margin-top: 50px;
+}
+
+.linkint:hover {
+  background-color: rgb(40, 38, 48);
+  color: rgb(50, 196, 50);
+  border: 2px solid black;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: 0.2s;
 }
 
 .conteudo-drop {
@@ -202,13 +218,19 @@
   border: 5px solid #0d6efd;
 }
 
+.oferta-item:hover {
+  border-color: rgb(50, 196, 50);
+}
+
 .botao-modal {
   background-color: blue;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 8px 35px;
   border-radius: 10px;
+}
+
+.botao-modal:hover {
+  padding: 15px 45px;
+  transition: 0.2s;
 }
 
 .conteiner-modal {
@@ -238,7 +260,7 @@
   background-color: #f8f9fa;
   border: 5px solid #0d6efd;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgb(66, 197, 66);
+  box-shadow: 0 0 20px #0d6efd;
   margin: 0;
   position: relative;
   display: grid;
@@ -252,7 +274,7 @@
   height: 30px;
   background-color: red;
   border: 5px solid #0d6efd;
-  box-shadow: 0 0 20px rgb(66, 197, 66);
+  box-shadow: 0 0 20px #0d6efd;
   position: absolute;
   top: -20px;
   right: -20px;

@@ -36,8 +36,13 @@ $cor-fundo: #f8f9fa;
     font-size: 40px;
     margin-top: 20px;
     margin-left: 10px;
- color: $cor-principal;
- border-bottom: 2px solid $cor-principal;
+    color: $cor-principal;
+    border-bottom: 2px solid $cor-principal;
+}
+
+.titulo:hover{
+    border-bottom: 2px solid rgb(50, 196, 50);
+    transition: .2s;
 }
 
 .lista{
@@ -56,11 +61,11 @@ $cor-fundo: #f8f9fa;
 .botao:active{
     box-sizing: border-box;
     outline:2px solid black;
-border-radius: 10px;
-padding: 5px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-@media (max-width:900px){
+@media (max-width:993px){
     .lista{
         display: none;
     }
@@ -70,7 +75,7 @@ padding: 5px;
 }
 
 .lista li {
-    padding-right: 15px;
+    padding-right: 10px;
     @include noDecoration;
 }
 
@@ -78,6 +83,17 @@ padding: 5px;
     @include noDecoration;
     color: $cor-principal;
     font-size: 20px;
+    margin-top: 50px;
+}
+
+.linkint:hover{
+    background-color: rgb(40, 38, 48);
+    color: rgb(50, 196, 50);
+    border: 2px solid black;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: .2s;
 }
 
 .conteudo-drop{
@@ -96,7 +112,7 @@ padding: 5px;
 .conteiner-apresentacao{
     display: grid;
     grid-template-columns: 1.8fr 1.2fr;
-    }
+}
 
 .apresentacao{
     height:450px;
@@ -117,7 +133,6 @@ padding: 5px;
     .vantagens-titulo{
         margin-top: 400px;
     }
-
 }
 
 .imagem-apresentacao-conteiner{
@@ -128,7 +143,6 @@ padding: 5px;
     .imagem-apresentacao-conteiner{
         height: 300px;
     }
-
 }
 
 .imagem-apresentacao{
@@ -156,8 +170,7 @@ padding: 5px;
 }
 
 .vantagens{
-
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
@@ -178,8 +191,6 @@ padding: 5px;
 .flex-item p{
     color: black;
 }
-
-
 
 .img{
     width: 300px;
@@ -212,18 +223,24 @@ padding: 5px;
     margin: 10px;
     display: grid;
     grid-template-rows: auto;
-   text-align: center;
-   padding: 10px;
-   border: 5px solid $cor-principal;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid $cor-principal;
+}
+
+.oferta-item:hover{
+    border-color: rgb(50, 196, 50);
 }
 
 .botao-modal{
     background-color: blue;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 8px 35px;
     border-radius: 10px;
+}
+
+.botao-modal:hover{
+    padding: 15px 45px;
+    transition: .2s;
 }
 
 .conteiner-modal{
@@ -237,9 +254,9 @@ padding: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }
 
 .conteiner-modal.ativo{
@@ -252,7 +269,7 @@ padding: 5px;
     background-color: $cor-fundo;
     border: 5px solid $cor-principal;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgb(66, 197, 66);
+    box-shadow: 0 0 20px $cor-principal;
     margin: 0;
     position: relative;
     display: grid;
@@ -261,13 +278,12 @@ padding: 5px;
 
 .botao-fechar{
     border-radius: 50%;
-    
     text-align: center;
     width: 30px;
     height: 30px;
     background-color: red;
     border: 5px solid $cor-principal;
-    box-shadow: 0 0 20px rgb(66, 197, 66);
+    box-shadow: 0 0 20px $cor-principal;
     position: absolute;
     top: -20px;
     right: -20px;
@@ -282,9 +298,7 @@ padding: 5px;
 .lista-mapa li{
     @include noDecoration;
     font-weight: bold;
-
     margin-bottom: 20px;
-
 }
 
 .lista-mapa li::before{
